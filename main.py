@@ -464,8 +464,101 @@
 # git remote add origin https://github.com/MirboboyevJasurjan/PythonProblems.git
 # git push -u origin main
 
-n = int(input())
-if 1 <= n < 100:
-    print(n/100)
-elif 100 <= n <= 10000:
-    print(n//100)
+# 479
+# n = int(input())
+# if 1 <= n < 100:
+#     print(n/100)
+# elif 100 <= n <= 10000:
+#     print(n//100)
+
+
+#0139
+
+# 4 
+# 1 1
+# 2 2 2
+# 3 3 3 3
+
+# n = int(input())
+# t = input()
+# arr = []
+
+# for i in t:
+#     arr.append(t[i])
+# print(arr)
+# bir = []
+# ikki = []
+# uch = []
+# tort=[]
+# besh = []
+    # if t[i] == 1:
+    #     bir.append(i)
+    # elif t[i] == 2:
+    #     ikki.append(i)
+    # elif t[i] == 3:
+    #     uch.append(i)
+    # elif t[i] == 4:
+    #     tort.append(i)
+    # elif t[i] == 5:
+    #     besh.append(i)
+# print(bir,'\n',ikki,'\n',uch,'\n',tort,'\n',besh)
+
+
+#127
+# n = int(input())
+# a = input().split()
+# arr1 = [3,4,1,7]
+# arr2 = [0,1,1,1,0,0,0,1]
+# maxArr = max(arr1)
+# empty = []
+# print(maxArr)
+# for i in range(0, maxArr) :
+#     if arr1[i] == i :
+#         empty.append(1)
+#     else :
+#         empty.append(0)
+# print(empty)
+
+# def find_missing(arr1, arr2):
+
+#     # Set longer array to lst1, shorter to lst2 
+#     if len(arr1) > len(arr2):
+#         lst1 = arr1
+#         lst2 = arr2
+#     else:
+#         lst1 = arr2
+#         lst2 = arr1
+
+#     # Go through elements in longer list
+#     for element in lst1:
+
+#         # If this element is not in lst2, we found it, return result
+#         if element not in lst2:
+#             return element
+
+
+
+# aa,bb,cc = input.split()
+# [a,b,c] = [int(aa),int(bb),int(bb)]
+# if a < 100000 and b < 100000 and c < 100000 :
+#     if a > b > c:
+#         print(a-c)
+#     elif a> c >b:
+#         print(a-b)
+#     elif b> c >a:
+#         print(b-a)
+#     elif b> a >c:
+#         print(b-c)
+#     elif c> a >b:
+#         print(c-b)
+#     elif c> b >a:
+#         print(c-a)
+
+
+n = 3
+text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+slov = text.split()
+for i in text :
+    if len() > n  :
+        slov == slov[::-1] 
+        print(slov[::-1])

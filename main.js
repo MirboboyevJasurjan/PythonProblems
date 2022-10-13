@@ -56,27 +56,40 @@
     
 // }
 
-year = prompt()
-if (10000 > year > 0 ){
-    if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0 ){
-        if (0 < year <= 9 ){
-            console.log(`12/09/000{year}`)
-        }else if (10 <= year <= 99 ){
-            console.log(`12/09/00{year}`)
-        }else if (100 <= year <= 999 ){
-            console.log(`12/09/0{year}`)
-        }else {
-            console.log(`12/09/{year}`)
-        }
-    }else{
-        if (0 < year <= 9 ){
-            console.log(`13/09/000{year}`) 
-        }else if( 10 <= year <= 99 ){
-            console.log(`13/09/00{year}`)
-        }else if ( 100 <= year <= 999 ){
-            console.log(`13/09/0{year}`)
-        }else {
-            console.log(`13/09/{year}`)
-        }
+// year = prompt()
+// if (10000 > year > 0 ){
+//     if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0 ){
+//         if (0 < year <= 9 ){
+//             console.log(`12/09/000{year}`)
+//         }else if (10 <= year <= 99 ){
+//             console.log(`12/09/00{year}`)
+//         }else if (100 <= year <= 999 ){
+//             console.log(`12/09/0{year}`)
+//         }else {
+//             console.log(`12/09/{year}`)
+//         }
+//     }else{
+//         if (0 < year <= 9 ){
+//             console.log(`13/09/000{year}`) 
+//         }else if( 10 <= year <= 99 ){
+//             console.log(`13/09/00{year}`)
+//         }else if ( 100 <= year <= 999 ){
+//             console.log(`13/09/0{year}`)
+//         }else {
+//             console.log(`13/09/{year}`)
+//         }
+//     }
+// }
+
+
+let n = 3
+let text = 'l;dsfaj a;sjf a ioewriopewrkdfjl dfdlfkjg'
+for (let i = 0; i<text.length; i++){
+    if(i.length != n){
+        i.split('').reverse().join('');
     }
 }
+console.log(text);
+
+
+
