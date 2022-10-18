@@ -555,10 +555,252 @@
 #         print(c-a)
 
 
-n = 3
-text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-slov = text.split()
-for i in text :
-    if len() > n  :
-        slov == slov[::-1] 
-        print(slov[::-1])
+# n = 3
+# text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+# slov = text.split()
+# for i in text :
+#     if len() > n  :
+#         slov == slov[::-1] 
+#         print(slov[::-1])
+
+# Isfandiyorga algebra fanidan quyidagi vazifa uy vazifasiga berildi:
+# f(x) = 
+# x5 + 8x4 – 5x3 + 3x2 + x – 12, bo’lsa f(n) ni toping. Ammo u dangasaligi uchun bu ishni o’zi qilgisi kelmayapti. Siz unga yordam bering.
+
+# x = int(input("X: "))
+# def sumX(x) :
+#     # s = math.pow(x,5) + (8*(math.pow(x,4))) - (5* (math.pow(x,3))) + (3* (math.pow(x,2))) + x -12
+#     s = x**5 + (8*(x**4)) - (5* (x**3)) + (3* (x**2)) + x -12
+#     print(s)
+# if x < 0 and -10>=x :
+#     x=x*-1
+#     sumX(x)
+# elif x <= 10 :
+#     sumX(x)
+
+# Python program for practical application of sqrt() function
+  
+# # import math module
+# import math
+  
+# # function to check if prime or not 
+# def check(n):
+#     if n == 1:
+#         return False
+          
+#         # from 1 to sqrt(n) 
+#     for x in range(2, (int)(math.sqrt(n))+1):
+#         if n % x == 0:
+#             return False 
+#     return True
+  
+# # driver code
+# n = 23
+# if check(n):
+#     print("prime") 
+# else:
+#     print("not prime")
+
+# 138
+
+# x = int(input())
+
+# def sumX(x) :
+#     s = (x**5 + (8*(x**4)) - (5* (x**3)) + (3* (x**2)) + x -12)
+#     print(s)
+# def check(x) :
+#     if x <= 10 :
+#         sumX(x)
+#     elif x <= 0 and x<=-10 :
+#         x=x*-15
+#         sumX(x)
+# check(x)
+
+# 
+
+ 
+# son = input("butun son kiriting:")
+# while True:
+# 	if son.isdigit():
+# 		print('tashakkur')
+# 		break 
+# 	else:
+# 		son = input("butun son kiriting:")
+
+# from turtle import Screen, Turtle
+
+# windowPy = Screen()
+
+# import pygal
+# line_chart = pygal.Line()
+# line_chart.title = "Statistika"
+# line_chart.x_labels = ["Yanvar","Fevral","Mart","Aprel","May","Iyun","Iyul","Avgust","Sentabr","Oktabr","Noyabr","Dekabr"]
+# line_chart.add("Github",[14,4,18,15,1,0,2,3,2])
+# line_chart.add("Instagram",[15,6,8,15,1,0,2,7,4])
+# line_chart.add("Pinterest",[34,41,10,15,10,2,1,3])
+# n = 0
+# while n < 2 :
+#     social_name = input("Social Media Name ")
+#     social_param = input("Social Media Parametrs ").split()
+#     line_chart.add(social_name, list(range(i in social_param)))
+#     n+=1
+# line_chart.render_in_browser()
+
+
+# print(list(range(85)))
+
+
+
+
+
+
+# n = int(input())
+# if n % 4 == 0 :
+#     res = n / 4 * 2
+#     print(res)
+# else :
+#     print(-1)
+
+# n = int(input())
+# n = 7
+# m = n//2
+# il = math.sqrt(n)
+# res = int(il*2)
+# print(m)
+
+# print(math.sqrt(2))
+
+from cgi import print_arguments
+from enum import unique
+import math
+from re import L 
+
+# n = 7 
+# i = 0
+# res = 0
+# iDar = []
+# while res <= 7 :
+#     ik = 2
+#     res = math.pow(2,i)
+#     iDar.append(i)
+#     i += 1
+#     print(res, i)
+# if iDar[-1] - 2**0 == n :
+#     print(2)
+# elif :
+#     pass
+
+# 3
+# 0 0
+# 2 1
+# 2
+
+# 0
+
+# n = int(input("Bekatlar "))
+# arr = []
+# for i in range(0, n) :
+#     aa,bb = input().split()
+#     [a, b] = [int(aa),int(bb)]
+#     arr.append([a,b])
+#     for item in arr :
+#         res = item[0]-item[1]
+# print(res)
+
+# uy raqami - xyz 
+# - xyz + yz
+
+
+
+
+# arr = [1,2,3,4,3,2,1]
+# arr.sort()
+# item = 0
+# while arr[item] != arr[item+1]:
+#     item = item + 1
+#     print(arr)
+#     break
+# arr = [1,2,3,4,3,2,1]
+# setted = set(arr)
+# print(setted, len(setted))
+# arr.sort()
+# for i in arr :
+#     # print(i)
+#     item = 0
+#     while i == arr[item+1] :
+#         arr.remove(i)
+#         print(arr[item])
+#         item+=1
+# print(arr)
+
+# arr = [1,2,3,4,3,2,1]
+
+
+# 0009
+# n = int(input())
+# arr = input().split()
+# while len(arr) != n :
+#     arr.pop()
+# for x in arr:
+#     if arr.count(x) == 1:
+#         print(x)
+# print(arr)5
+
+# print(arr)
+
+# ints_list = [1, 2, 3, 4, 3, 2]
+
+# temp = []
+
+# for x in ints_list:
+#     if x not in temp:
+#         temp.append(x)
+
+# ints_list = temp
+
+# print(f'Updated List after removing duplicates = {temp}')
+
+# values = [87, 94, 45, 94, 94, 41, 65, 94, 41, 99, 94, 94, 94]
+
+# for x in values:
+#     if values.count(x) > 1:
+#         values.remove(x)
+# print(values)  # [87, 45, 65, 41, 99, 94, 94] - 94 is still present twice
+
+
+#0011
+# 2-max
+# n(2 ≤ n ≤ 100) ta elementdan iborat butun sonli massiv berilgan. 
+# Massivning ikkinchi eng katta elementini aniqlang.
+
+# Kiruvchi ma'lumotlar:
+# Birinchi satrda massiv elementlar soni n natural soni beriladi. 
+# Keyingi qatorda nn ta nomanfiy butun son, massiv elementlari beriladi. 
+# Barcha kiruvchi ma'lumotlar qiymati 100 dan oshmaydi.
+
+# Chiquvchi ma'lumotlar:
+# Massivning ikkinchi eng katta elementini chiqaring.
+
+# Misollar
+
+# #	input.txt	output.txt
+# 5
+# 1 5 2 3 4
+# 4
+
+# 6
+# 3 5 5 2 2 3
+# 5
+
+
+n = int(input())
+arr = input().split()
+maxNumb = 0
+while len(arr) != n :
+    arr.pop()
+for i in arr :
+    if int(i) >= 2 and 100 >= int(i):
+        arr.remove(max(arr))
+        maxNumb = max(arr)
+        break
+print(int(maxNumb))
