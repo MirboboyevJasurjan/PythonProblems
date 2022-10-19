@@ -813,7 +813,7 @@
 # n = int(input())
 # arr = input().split()
 # maxNumb = 0
-# while len(arr) >= n :
+# while len(arr) > n :
 #     arr.pop()
 # for i in arr :
 #     if int(i) >= 2 and 100 >= int(i):
@@ -873,11 +873,17 @@
 # print(arr[-1])
 
 # 0462
-# txt = input()
-# print(txt[::-1])
+# k = int(input())
+# txt = input().split()
+# arr = []
+# for i in txt :
+#     if len(i) >= k :
+#         arr.append(i[::-1])
+#     print(i[::-1])
+# print("".join(arr))
 # if len(txt) < 16 :
-#   	if 'sh' in txt :
-#         print(txt[::-1])
+  	# if 'sh' in txt :
+        # print(txt[::-1])
 
 
 # str = input()
@@ -990,19 +996,76 @@
 # for i in range(1, n+1) :
 #     isPrime(i)
 
-n = int(input())
-val = 0
+# n = int(input())
+# val = 0
+# arr = []
+# for i in range(0, n):
+#     c = 0
+#     for j in range(1, i):
+#         if i % j == 0:
+#             c+=1
+#     if c==1 :
+#         val +=1
+#         arr.append(i)
+# if val % 2 == 0:
+#     print("Ali")
+#     print(val, arr)
+# else:
+#     print("Bobur")
+#     print(val, arr)
 
-if val % 2 == 0:
-    print("Ali")
-else:
-    print("Bobur")
 
 
+# 0693
+# k = int(input())
+# txt = input().split()
+# k = int(input())
+# txt = input()
+# letter = txt.split(' ')
+# arr = []
+# for i in letter :
+#     if len(i) > k :
+#         arr.append(i[::-1])
+#     else:
+#         arr.append(i)
+# print(" ".join(arr))
+
+#0462
+
+# txt = input()
+# # letter = txt.split('')
+# arr = []
+# for i in txt :
+#     if (i == "s" and i+1 == "h") and (i == "c" and i+1 == "h") and (i == "n" and i+1 == "g") :
+#         continue
+#     else:
+#         arr.append(i[::-1])
+#         # arr.append(i)
+# print("".join(arr))
 
 
+# str = input()
+# str1 = ""
+# for i in str:
+#     for ind in range(1, len(str)) :
+#         # if (i == "s" and str[ind+1]== 'h') and (i == "c" and str[ind+1]== 'h') and (i == "n" and str[ind+1]== 'g'):
+#         #     str1 = i[::-1] + str1
+#         # else:
+#         if i == 's' and ind == "h":
+#             str1 = i + ind+str
+#         else :
+#             str1 = i[::-1] + str1
 
+# print(str1)
 
+# str = 'asherzod'
+# str1 = ''
+# for i in str:
+#     if (i == "s" or i == "c" and str.index(i)+1 == "h")  :
+#         str1 = i + str1[::]
+#     # else :
+#     #     str1 = i[::-1] + str1
+# print(str1)
 
 
 
