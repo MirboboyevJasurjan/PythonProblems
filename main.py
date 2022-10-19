@@ -12,16 +12,16 @@
 #     print('>') if (a>b) else print("<" )
 # else:
 #     print("=")
-#4-masala
+# 4-masala
 # a, b = input().split()
 # print(int(a) * int(b))
 
 
-# taking multiple inputs at a time. # and type casting using list() 
-# function. 
+# taking multiple inputs at a time. # and type casting using list()
+# function.
 # x = list(map(int, input("Enter a multiple value: ").split()))
-# taking multiple inputs at a time. 
-# c = [int(x) for 
+# taking multiple inputs at a time.
+# c = [int(x) for
 # x in input("Enter multiple value: ").split()]
 
 # year = int(input())
@@ -33,11 +33,17 @@
 
 # Kabisa
 # year = int(input('Enter year : '))
- 
 # if (year%4 == 0 and year%100 != 0) or (year%400 == 0) :
 #     print(f"12/09/{year}")
 # else :
 #     print(year, "is not a leap year.")
+
+# year = int(input('Enter year : '))
+# if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0) :
+#     print("Kabisa yili")
+# else :
+#     print("Kabisa yili emas")
+
 
 # let serie = "A465187";
 # let check = 0;
@@ -71,7 +77,7 @@
 # print(value)
 # print(numSer in nums)
 
-#from pprint import pprint
+# from pprint import pprint
 
 # serie = "A987654"
 # if (serie[0] == "A") and (serie[1::].isdigit) and len(serie) == 7 :
@@ -87,7 +93,7 @@
 
 # serie = input()
 # len(serie) == 7
-# if serie[1::].isdigit() and serie[0].isupper() : # and serie[0].isalpha() 
+# if serie[1::].isdigit() and serie[0].isupper() : # and serie[0].isalpha()
 #     print(1)
 # else :
 #     print(0)
@@ -104,7 +110,7 @@
 #             print(f"12/09/{year}")
 #     else :
 #         if 0 < year <= 9 :
-#             print(f"13/09/000{year}")12 
+#             print(f"13/09/000{year}")12
 #         elif 10 <= year <= 99 :
 #             print(f"13/09/00{year}")
 #         elif 100 <= year <= 999 :
@@ -113,7 +119,7 @@
 #             print(f"13/09/{year}")
 
 
-#43
+# 43
 # a, b = input().split()
 # [a, b] = [b, a]
 # print(a,b)
@@ -123,9 +129,8 @@
 #     print(1)
 
 
-
 # “Deyarli” tub son
-# n va 4ta a, b, c va d turli sonlar beriladi. 
+# n va 4ta a, b, c va d turli sonlar beriladi.
 # Ushbu 4ta sonning hech qaysisiga qoldiqsiz bo’linmaydigan sonlarni “Deyarli” tub son deymiz.
 # Sizning vazifangiz [1; n] oralig’ida nechta “Deyarli” tub son borligini topish.
 
@@ -138,7 +143,7 @@
 
 # Misollar
 # #	input.txt	output.txt
-# 1	
+# 1
 # 2
 # 20 2 3 10 7
 # 40 11 19 23 5
@@ -153,35 +158,33 @@
 #     else :
 #         print("0")
 
-        
+
 # result = any(item in test_list for item in test_list)
 
 
-
 # from operator import not_
-
 
 
 # n = int(input())
 # nums = input().split()
 
 
-#Sizga N ta elementdan iborat A to’plam hamda K soni berilgan, 
+# Sizga N ta elementdan iborat A to’plam hamda K soni berilgan,
 # A to'plamda K sonining bo'luvchilari bor.
 # (Faqatgina K soni bo'lmasligi mumkin).
 # K sonining nechta bo'luvchisi to'plamda yo'q ekanligini topishingiz kerak.
 
 
-#a = int(input())
-#print(a+2)
+# a = int(input())
+# print(a+2)
 
 
-#813
+# 813
 
 # n = int(input())
 # summ = 0
 # for i in range(1, n+1) :
-#     if 99 < i < 1000 :    
+#     if 99 < i < 1000 :
 #         summ += 3
 #     elif 9 < i < 100  :
 #         summ += 2
@@ -207,7 +210,6 @@
 #         say(n/a[i] + b[i]  + say(n%a[i]))
 
 
-
 # # 10
 # n = int(input())
 # aa,bb,cc = input().split()
@@ -220,7 +222,7 @@
 
 # min and max
 
-# import math 
+# import math
 
 # string_list = ["1", "2", "3"]
 # integer_map = map(int, string_list) # Maps each string to an int.
@@ -258,8 +260,7 @@
 #         print(n)
 
 
-
-#336-masala
+# 336-masala
 
 # Bitboyda 1 tiyinlik tanga bor, uning bu tangasi ketma-ket tashlanganda hech qachon ketma-ket uch marotaba gerb tomoni bilan tushmaydi.
 # Bitboy bu tangani ketma-ket N marotaba tashlaganda tanganing tushish ketma-ketligi variantlar sonini aniqlang.
@@ -274,7 +275,7 @@
 # Chiqish faylida har bir test uchun alohida satrda so’ralgan javobni 109+7 ga bo’lgandagi qoldiqni chop eting!
 
 # Misollar
-# #	input.txt	
+# #	input.txt
 # 2
 # 4
 # 5
@@ -328,15 +329,11 @@
 #         print(arr + arr.sort())
 
 
-
-
-
-
-# Azimjon va Davlatbek bugun bir o'yin o'ynashmoqda. 
-# Azimjon bitta sonini o'ylaydi va bu sonni Davlatbekga aytmaydi. 
-# Ammo Azimjon Davlatbekka o'ylagan soni [a,b] oraliqda ekanligini aytadi. 
-# Davlatbek Azimjon o'ylagan sonni topish uchun o'zidan taxminiy sonlarni aytishni boshlaydi va 
-# o'zi aytgan sonlar ichida Azimjon o'ylagan son borligiga 100% ishonch xosil qilgan payti bu jarayonni tugatadi. 
+# Azimjon va Davlatbek bugun bir o'yin o'ynashmoqda.
+# Azimjon bitta sonini o'ylaydi va bu sonni Davlatbekga aytmaydi.
+# Ammo Azimjon Davlatbekka o'ylagan soni [a,b] oraliqda ekanligini aytadi.
+# Davlatbek Azimjon o'ylagan sonni topish uchun o'zidan taxminiy sonlarni aytishni boshlaydi va
+# o'zi aytgan sonlar ichida Azimjon o'ylagan son borligiga 100% ishonch xosil qilgan payti bu jarayonni tugatadi.
 
 # Savol: Davlatbek eng kamida nechta urunishda Azimjon o'ylagan sonni 100% aytgan bo'ladi?
 
@@ -366,19 +363,19 @@
 # if a == b :
 #     print(1)
 # elif a>b:
-#     print(b)	
+#     print(b)
 # print(a,b)
 
 
 # 555
 # a = 456
-# yuz = a // 100 
+# yuz = a // 100
 # on = a // 10 - yuz * 10
 # bir = a % 10
 # print(yuz,on,bir)
 
 
-#0608
+# 0608
 # a,b = input().split()
 # if len(b) == int(a):
 # 	print("yes")
@@ -403,16 +400,15 @@
 # log2\4 =16
 
 # 0910
-# import math 
+# import math
 # n = int(input())
 # # ik = n//2
 # lo = math.log(n,2)
 # print(lo)
 
 
-
 # # 0293
-# 1-7-1101000 
+# 1-7-1101000
 # 2-5-1100101
 # 3-11-1101100
 # 4-11-1101100
@@ -472,9 +468,9 @@
 #     print(n//100)
 
 
-#0139
+# 0139
 
-# 4 
+# 4
 # 1 1
 # 2 2 2
 # 3 3 3 3
@@ -491,20 +487,20 @@
 # uch = []
 # tort=[]
 # besh = []
-    # if t[i] == 1:
-    #     bir.append(i)
-    # elif t[i] == 2:
-    #     ikki.append(i)
-    # elif t[i] == 3:
-    #     uch.append(i)
-    # elif t[i] == 4:
-    #     tort.append(i)
-    # elif t[i] == 5:
-    #     besh.append(i)
+# if t[i] == 1:
+#     bir.append(i)
+# elif t[i] == 2:
+#     ikki.append(i)
+# elif t[i] == 3:
+#     uch.append(i)
+# elif t[i] == 4:
+#     tort.append(i)
+# elif t[i] == 5:
+#     besh.append(i)
 # print(bir,'\n',ikki,'\n',uch,'\n',tort,'\n',besh)
 
 
-#127
+# 127
 # n = int(input())
 # a = input().split()
 # arr1 = [3,4,1,7]
@@ -521,7 +517,7 @@
 
 # def find_missing(arr1, arr2):
 
-#     # Set longer array to lst1, shorter to lst2 
+#     # Set longer array to lst1, shorter to lst2
 #     if len(arr1) > len(arr2):
 #         lst1 = arr1
 #         lst2 = arr2
@@ -535,7 +531,6 @@
 #         # If this element is not in lst2, we found it, return result
 #         if element not in lst2:
 #             return element
-
 
 
 # aa,bb,cc = input.split()
@@ -560,11 +555,11 @@
 # slov = text.split()
 # for i in text :
 #     if len() > n  :
-#         slov == slov[::-1] 
+#         slov == slov[::-1]
 #         print(slov[::-1])
 
 # Isfandiyorga algebra fanidan quyidagi vazifa uy vazifasiga berildi:
-# f(x) = 
+# f(x) =
 # x5 + 8x4 – 5x3 + 3x2 + x – 12, bo’lsa f(n) ni toping. Ammo u dangasaligi uchun bu ishni o’zi qilgisi kelmayapti. Siz unga yordam bering.
 
 # x = int(input("X: "))
@@ -579,25 +574,25 @@
 #     sumX(x)
 
 # Python program for practical application of sqrt() function
-  
+
 # # import math module
 # import math
-  
-# # function to check if prime or not 
+
+# # function to check if prime or not
 # def check(n):
 #     if n == 1:
 #         return False
-          
-#         # from 1 to sqrt(n) 
+
+#         # from 1 to sqrt(n)
 #     for x in range(2, (int)(math.sqrt(n))+1):
 #         if n % x == 0:
-#             return False 
+#             return False
 #     return True
-  
+
 # # driver code
 # n = 23
 # if check(n):
-#     print("prime") 
+#     print("prime")
 # else:
 #     print("not prime")
 
@@ -616,14 +611,14 @@
 #         sumX(x)
 # check(x)
 
-# 
+#
 
- 
+
 # son = input("butun son kiriting:")
 # while True:
 # 	if son.isdigit():
 # 		print('tashakkur')
-# 		break 
+# 		break
 # 	else:
 # 		son = input("butun son kiriting:")
 
@@ -650,10 +645,6 @@
 # print(list(range(85)))
 
 
-
-
-
-
 # n = int(input())
 # if n % 4 == 0 :
 #     res = n / 4 * 2
@@ -668,14 +659,8 @@
 # res = int(il*2)
 # print(m)
 
-# print(math.sqrt(2))
 
-from cgi import print_arguments
-from enum import unique
-import math
-from re import L 
-
-# n = 7 
+# n = 7
 # i = 0
 # res = 0
 # iDar = []
@@ -687,8 +672,43 @@ from re import L
 #     print(res, i)
 # if iDar[-1] - 2**0 == n :
 #     print(2)
-# elif :
-#     pass
+
+# def isTwo(numb) :
+# while n > numb :
+# while nTim < n :
+#     resDbl = int(math.pow(2, item))
+#     nTim = resDbl
+#     item += 1
+#     arrIts.append(item)
+#     arrDbls.append(resDbl)
+# if arrDbls[-1] > n :
+#     arrDbls.pop()
+#     arrIts.pop()
+# resTot = n-arrDbls[-1]
+
+# import math
+# n = 39
+# def isTwo(two):
+#     arrDbls = []
+#     arrIts = []
+#     nTim = 0
+#     item = 0
+#     while nTim < two:
+#         resDbl = int(math.pow(2, item))
+#         nTim = resDbl
+#         item += 1
+#         arrIts.append(item)
+#         arrDbls.append(resDbl)
+#     if arrDbls[-1] > two:
+#         arrDbls.pop()
+#         arrIts.pop()
+#     resTot = two-arrDbls[-1]
+#     print(resTot)
+#     return resTot
+# res = isTwo(n)
+# if res > 2 :
+#     res = isTwo(res)
+
 
 # 3
 # 0 0
@@ -707,10 +727,8 @@ from re import L
 #         res = item[0]-item[1]
 # print(res)
 
-# uy raqami - xyz 
+# uy raqami - xyz
 # - xyz + yz
-
-
 
 
 # arr = [1,2,3,4,3,2,1]
@@ -768,14 +786,14 @@ from re import L
 # print(values)  # [87, 45, 65, 41, 99, 94, 94] - 94 is still present twice
 
 
-#0011
+# 0011
 # 2-max
-# n(2 ≤ n ≤ 100) ta elementdan iborat butun sonli massiv berilgan. 
+# n(2 ≤ n ≤ 100) ta elementdan iborat butun sonli massiv berilgan.
 # Massivning ikkinchi eng katta elementini aniqlang.
 
 # Kiruvchi ma'lumotlar:
-# Birinchi satrda massiv elementlar soni n natural soni beriladi. 
-# Keyingi qatorda nn ta nomanfiy butun son, massiv elementlari beriladi. 
+# Birinchi satrda massiv elementlar soni n natural soni beriladi.
+# Keyingi qatorda nn ta nomanfiy butun son, massiv elementlari beriladi.
 # Barcha kiruvchi ma'lumotlar qiymati 100 dan oshmaydi.
 
 # Chiquvchi ma'lumotlar:
@@ -792,15 +810,208 @@ from re import L
 # 3 5 5 2 2 3
 # 5
 
+# n = int(input())
+# arr = input().split()
+# maxNumb = 0
+# while len(arr) >= n :
+#     arr.pop()
+# for i in arr :
+#     if int(i) >= 2 and 100 >= int(i):
+#         arr.remove(max(arr))
+#         maxNumb = max(arr)
+#         break
+# print(int(maxNumb))
+
+
+# n = int(input())
+# # arr = input().split()
+# nList = input().split()
+# integerMap = map(int, nList)
+# arr = list(integerMap)
+# arr.sort()
+# while len(arr) >= n :
+#     arr.pop()
+# if min(arr) > 1 and 101 > max(arr):
+#     arr.remove(max(arr))
+# print(arr[-1])
+
+# n = int(input())
+# nList = input().split()
+# integerMap = map(int, nList)
+# arr = list(integerMap)
+# arr.sort()
+# while len(arr) >= n :
+#     arr.pop()
+# if arr[0] > 1 and 101 > arr[-1] :
+#     arr.remove(arr[-1])
+#     print(arr[-1])
+# else :
+#     print(False)
+# n = int(input())
+# arr = input().split()
+# maxNumb = 0
+# while len(arr) >= n :
+#     arr.pop()
+# for i in arr :
+#     if 101 > int(i) > 1:
+#         arr.remove(max(arr))
+#         maxNumb = max(arr)
+#         print(int(maxNumb))
+#         break
+#     else :
+#         break
+# print(int(maxNumb))
+
+# n = int(input())
+# nList = input().split()
+# integerMap = map(int, nList)
+# arr = list(integerMap)
+# while len(arr) >= n :
+#     arr.pop()
+# arr.sort()
+# arr.pop()
+# print(arr[-1])
+
+# 0462
+# txt = input()
+# print(txt[::-1])
+# if len(txt) < 16 :
+#   	if 'sh' in txt :
+#         print(txt[::-1])
+
+
+# str = input()
+# str1 = ""
+# for i in str:
+#     if (i == "s" and i+1== 'h') and (i == "c" and i+1== 'h') and (i == "n" and i+1== 'g'):
+#         str1 = i[::-1] + str1
+#     else:
+#         str1 = i + str1
+# print(str1)
+
+
+#     # Given String
+# # print("The original string is: ", str)
+# # print("The reverse string is", reverse_string(str))  # Function call
+
+# def reverse(str):
+#     string = "".join(reversed(str)) # reversed() function inside the join() function
+#     return string
+
+# s = "JavaTpoint"
+
+# print ("The original string is : ",s)
+# print ("The reversed string using reversed() is : ",reverse(s) )
+
+
+# 0008
+
+# nList = input().split()
+# integerMap = map(int, nList)
+# n = list(integerMap)
+# sumMin = 0
+# sumMax = 0
+# if len(n) != 5 :
+#     n.pop()
+# minn = n.copy()
+# maxx = n.copy()
+# minNum = min(minn)
+# maxNum = max(maxx)
+# maxList = maxx.remove(minNum)
+# minList = minn.remove(maxNum)
+# for ele in range(0, len(minn)):
+#     sumMin = sumMin + minn[ele]
+#     sumMax = sumMax + maxx[ele]
+# print(sumMin, sumMax)
+
+# letr = 10
+# for i in range(0, 701) :
+#     letr = letr ** i
+#     print(letr)
+
+
+# aa, bb, cc = input().split()
+# [a,b,c] = [int(aa) ,int(bb) ,int(cc) ]
+# sumPl = a+b+c
+# if sumPl <= 1000 :
+#     if sumPl % 2 == 0 :
+#         sums = sumPl // 2
+#         print(int(sums))
+#     else :
+#         sums = sumPl // 2 + 1
+#         print(int(sums))
+
+
+# aa, bb, cc = input().split()
+# [a, b, c] = [int(aa), int(bb), int(cc)]
+# def sumTwo(n) : 
+#     if n % 2 == 0 :
+#         return n // 2
+#     else :
+#         return (n // 2) + 1
+    
+# all =  sumTwo(a) + sumTwo(b) + sumTwo(c)
+# print(int(all))
+
+# if a % 2 == 0 :
+#     sumA = a // 2
+# else :
+#     sumA = a // (2 + 1)
+# if b % 2 == 0 :
+#     sumB = b // 2
+# else :
+#     sumB = b // (2 + 1)
+# if a % 2 == 0 :
+#     sumC = c // 2
+# else :
+#     sumC = c // (2 + 1)
+
+
+# def is_prime(n):
+#   for i in range(2,n):
+#     if (n%i) == 0:
+#       return False
+#   val += 1
+# if val % 2 == 0:
+#     print("Ali")
+# else:
+#     print("Bobur")
+
+# def isPrime(num) :
+#     flag = False
+#     if num > 1:
+#         for i in range(2, num):
+#             if (num % i) == 0:
+#                 flag = True
+#                 break
+#     if flag != True:
+#         val += 1
+
+# for i in range(1, n+1) :
+#     isPrime(i)
 
 n = int(input())
-arr = input().split()
-maxNumb = 0
-while len(arr) != n :
-    arr.pop()
-for i in arr :
-    if int(i) >= 2 and 100 >= int(i):
-        arr.remove(max(arr))
-        maxNumb = max(arr)
-        break
-print(int(maxNumb))
+val = 0
+
+if val % 2 == 0:
+    print("Ali")
+else:
+    print("Bobur")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
