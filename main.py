@@ -554,7 +554,7 @@
 # text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 # slov = text.split()
 # for i in text :
-#     if len() > n  :
+#     if len(slov) > n  :
 #         slov == slov[::-1]
 #         print(slov[::-1])
 
@@ -1068,8 +1068,29 @@
 # print(str1)
 
 
+# 0025
+
+def convert(seconds):
+    seconds = seconds % (24 * 3600)
+    hour = seconds // 3600
+    seconds %= 3600
+    minutes = seconds // 60
+    seconds %= 60
+    return "%d:%02d:%02d" % (hour, minutes, seconds)     
+n = int(input())
+print(convert(n))
 
 
+seconds = n % (24*3600)
+print(seconds)
+hour = n // 3600
+seconds = seconds % 3600
+print(seconds)
+minutes = seconds // 60
+seconds %= 60
+print(seconds)
+
+print(hour, minutes, seconds)
 
 
 
