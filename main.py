@@ -1202,12 +1202,11 @@
 
 # 0870
 from datetime import datetime
-
 start_time = datetime.now()
+
 aa, bb = input().split()
-[a, b] = [int(aa), int(bb)]
-if a > b and (1 < a < 100) and (1 < b < 100) :
-    year = 0
+[a, b, year ] = [int(aa), int(bb), 0]
+if (a > b) and (1 < a+b < 198) :
     while a / b != 2.0 :
         a+=1
         b+=1
@@ -1215,7 +1214,7 @@ if a > b and (1 < a < 100) and (1 < b < 100) :
     print(year)
 else: 
     print(-1)
-# do your work here
+    
 end_time = datetime.now()
 print('Duration: {}'.format(end_time - start_time))
 
