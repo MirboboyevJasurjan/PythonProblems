@@ -687,7 +687,7 @@
 # resTot = n-arrDbls[-1]
 
 # import math
-# n = 39
+# n = 37
 # def isTwo(two):
 #     arrDbls = []
 #     arrIts = []
@@ -1070,32 +1070,154 @@
 
 # 0025
 
-def convert(seconds):
-    seconds = seconds % (24 * 3600)
-    hour = seconds // 3600
-    seconds %= 3600
-    minutes = seconds // 60
-    seconds %= 60
-    return "%d:%02d:%02d" % (hour, minutes, seconds)     
-n = int(input())
-print(convert(n))
+# def convert(seconds):
+#     seconds = seconds % (24 * 3600)
+#     hour = seconds // 3600
+#     seconds %= 3600
+#     minutes = seconds // 60
+#     seconds %= 60
+#     return "%d:%02d:%02d" % (hour, minutes, seconds)     
+# n = int(input())
+# print(convert(n))
 
 
-seconds = n % (24*3600)
-print(seconds)
-hour = n // 3600
-seconds = seconds % 3600
-print(seconds)
-minutes = seconds // 60
-seconds %= 60
-print(seconds)
+# seconds = n % (24*3600)
+# print(seconds)
+# hour = n // 3600
+# seconds = seconds % 3600
+# print(seconds)
+# minutes = seconds // 60
+# seconds %= 60
+# print(seconds)
 
-print(hour, minutes, seconds)
-
-
+# print(hour, minutes, seconds)
 
 
+# O'NLIKDAGI SATR
 
+
+# import math
+
+
+# def isTwo(two):
+#     arrDbls = []
+#     arrIts = []
+#     nTim = 0
+#     item = 0
+#     while nTim < two:
+#         resDbl = int(math.pow(2, item))
+#         nTim = resDbl
+#         item += 1
+#         arrIts.append(item)
+#         arrDbls.append(resDbl)
+#     if arrDbls[-1] > two:
+#         arrDbls.pop()
+#         arrIts.pop()
+#     resTot = two-arrDbls[-1]
+#     print(resTot)
+#     return resTot
+# res = isTwo(n)
+# if res > 2 :
+#     res = isTwo(res)
+
+
+
+
+
+# def power(num, n):
+ 
+#     if(n == 0):
+#         return 1
+#     elif(n % 2 == 0):
+#         return power(num, n // 2) * power(num, n // 2)
+#     else:
+#         return num * power(num, n // 2) * power(num, n // 2)
+ 
+# def checkRecursive(x, n, curr_num=1, curr_sum=0):
+#     results = 0
+#     p = power(curr_num, n)
+#     while(p + curr_sum < x):
+#         results += checkRecursive(x, n, curr_num + 1, p + curr_sum)
+#         curr_num = curr_num + 1
+#         p = power(curr_num, n)
+#     if(p + curr_sum == x):
+#         results = results + 1
+#     return results
+
+# if __name__ == '__main__':
+#     x = int(input())
+#     n = 2
+#     print(checkRecursive(x, n))
+ 
+
+
+
+
+
+
+
+
+
+# n = 50
+# powTwo = 0
+# iterr = 0
+# while n > 2 :
+#     if n // 2 :
+#         n = n // 2
+#         powTwo+=1
+# print(powTwo)
+
+# 
+# aa, bb = input().split()
+# [a, b] = [int(aa), int(bb)]
+# powB = b*100
+# print(f"{format(powB / a, '.2f')}%")
+
+
+# aa, bb = input().split()
+# [a, b] = [int(aa), int(bb)]
+# powB = b*100
+# res = powB/a
+# if powB % a != 0 :
+#     print(f"{int(res)}.00%")
+# elif powB % a == "%02d" :
+#     print(f"{round(float(res),2)}%")
+
+
+
+
+
+# "%02d"
+
+
+
+# return "%d:%02d:%02d" % (hour, minutes, seconds)     
+
+
+# res = b * 100
+# val = round(float(res) / a, 2)
+# vall = round(val,2)
+# print("%02d" % val)
+
+
+# 0870
+from datetime import datetime
+
+start_time = datetime.now()
+aa, bb = input().split()
+[a, b] = [int(aa), int(bb)]
+if a > b and (1 < a < 100) and (1 < b < 100) :
+    year = 0
+    while a / b != 2.0 :
+        a+=1
+        b+=1
+        year+=1
+    print(year)
+else: 
+    print(-1)
+# do your work here
+end_time = datetime.now()
+print('Duration: {}'.format(end_time - start_time))
 
 
 

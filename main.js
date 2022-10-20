@@ -82,14 +82,28 @@
 // }
 
 
-let n = 3
-let text = 'l;dsfaj a;sjf a ioewriopewrkdfjl dfdlfkjg'
-for (let i = 0; i<text.length; i++){
-    if(i.length != n){
-        i.split('').reverse().join('');
+// let n = 3
+// let text = 'l;dsfaj a;sjf a ioewriopewrkdfjl dfdlfkjg'
+// for (let i = 0; i<text.length; i++){
+//     if(i.length != n){
+//         i.split('').reverse().join('');
+//     }
+// }
+// console.log(text);
+
+
+// let ages = prompt()
+let a = ages.split(" ")[0];
+let b = ages.split(" ")[1];
+
+if(a > b && (1 < a < 100) && (1 < b < 100) ){
+    let year = 0
+    while (a / b != 2.0 ){
+        a+=1
+        b+=1
+        year+=1
+    console.log(year)
     }
+}else{
+    console.log(-1)
 }
-console.log(text);
-
-
-
