@@ -1345,26 +1345,35 @@
 
 
 #0214
-from datetime import datetime
-start_time = datetime.now()
+# from datetime import datetime
+# start_time = datetime.now()
 
-# n,q = input().split()
-# a = input().split()
-n,q = 5,10
-a = [10,20,30,40,50]
-if len(a) == int(n) :
-    for i in range(0, int(q)) :
-        x = input()
-        if x in a:
-            print("YES")
-        else:
-            print("NO")
+# # n,q = input().split()
+# # a = input().split()
+# n,q = 5,10
+# a = [10,20,30,40,50]
+# if len(a) == int(n) :
+#     for i in range(0, int(q)) :
+#         x = input()
+#         if x in a:
+#             print("YES")
+#         else:
+#             print("NO")
  
-end_time = datetime.now()
-print('Duration: {}'.format(end_time - start_time))
+# end_time = datetime.now()
+# print('Duration: {}'.format(end_time - start_time))
 
 
+#0257 
+n = input()
+freshZer = n.split('0')
+freshOne = n.split('1')
+print(freshZer,freshOne)
 
+if '0' in freshZer :
+    print("N0")
+else :
+    print("YES")
 
 
 
