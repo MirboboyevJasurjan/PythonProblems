@@ -1201,22 +1201,189 @@
 
 
 # 0870
+# from datetime import datetime
+# start_time = datetime.now()
+
+# aa, bb = input().split()
+# [a, b, year ] = [int(aa), int(bb), 0]
+# if (a > b) and (1 < a+b < 198) :
+#     while a / b != 2.0 :
+#         a+=1
+#         b+=1
+#         year+=1
+#     print(year)
+# else: 
+#     print(-1)
+    
+# end_time = datetime.now()
+# print('Duration: {}'.format(end_time - start_time))
+
+
+
+
+#0303
+# n = int(input())
+# scores = input().split()
+# newArr = []
+# newStr = ''
+# for i in scores :
+#     if 0 < int(i) < 101 :
+#         newArr.append(1)
+#     else :
+#         newArr.append(0)
+# if len(scores) == n :
+#     if sum(newArr) == n:
+#         scores.sort()
+#         newStr = str(" ".join(scores))
+#     else :
+#         print(False)
+# else :
+#     print(False)
+# print(newStr)
+
+
+
+
+#0301
+# n = int(input())
+# scores = input().split()
+# trueArr = scores
+# sortedArr = trueArr.sort()
+# print(sortedArr)
+# if len(scores) == n :
+    # for i in trueArr:
+        # print(i)
+        # if trueArr[int(i)] == scores[int(i)] :
+        #     print(True)
+
+# 0296
+# v = int(input("Tb"))
+# d = int(input("Speed Morning"))
+# n = int(input("Speed Night"))
+# dayInSec = 86400 
+# dayMb
+
+
+
+# 0269
+# mil = 1000000
+# k = int(input())
+# allNums = []
+# for i in range(1,mil,2) :
+#     allNums.append(i)
+
+
+
+# print(allNums)
+
+# 0236  Completed
+
+# n = int(input())
+# arr = []
+# arrMin = []
+# for i in range(1,n+1) :
+#     arr.append(i)
+# if n < 0 :
+#     n = (n*-1) 
+#     for i in range(1,n+1) :
+#         arrMin.append(i)
+# if arr == [] :
+#     print(f"-{sum(arrMin)-1}")
+# else :
+#     print(sum(arr))
+
+# 0237 
+# n = int(input())
+# socks = input().split()
+# newSock = []
+# values = 0
+# if len(socks) == n :
+#     socks.sort()
+# for i in range(1, len(socks)) :
+#     if socks[i] == socks[i-1] :
+#         values += 1
+#         newSock.append(socks[i])
+# print(values)
+
+
+# 0238 
+# n = int(input())
+# nums = input().split()
+# newArr = []
+# val = 0
+# if len(nums) == n :
+#     nums.sort()
+
+# for i in range(0, len(nums)):
+#     if nums[i] not in newArr :
+#         newArr.append(nums[i])
+#     if nums[i] not in newArr :
+#         val+=1
+# print(nums, newArr)        
+# print(val)
+
+
+#     for i in range(0, len(nums)) :
+
+#         if nums.count(i) > 1 :
+#             x = nums.count(i)
+#             print(x)
+# else :
+#     print(False)
+# 0243
+# n = int(input())
+# day = 1
+# rek = 5
+# # whLik = 2
+# whLikAll = 0
+
+# for i in range(0, n) :
+#     whLikAll = round(rek/2 * day)
+#     rek+=1
+#     day+=1
+# print(whLikAll)
+
+
+#0214
 from datetime import datetime
 start_time = datetime.now()
 
-aa, bb = input().split()
-[a, b, year ] = [int(aa), int(bb), 0]
-if (a > b) and (1 < a+b < 198) :
-    while a / b != 2.0 :
-        a+=1
-        b+=1
-        year+=1
-    print(year)
-else: 
-    print(-1)
-    
+# n,q = input().split()
+# a = input().split()
+n,q = 5,10
+a = [10,20,30,40,50]
+if len(a) == int(n) :
+    for i in range(0, int(q)) :
+        x = input()
+        if x in a:
+            print("YES")
+        else:
+            print("NO")
+ 
 end_time = datetime.now()
 print('Duration: {}'.format(end_time - start_time))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
