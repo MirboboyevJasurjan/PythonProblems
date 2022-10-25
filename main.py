@@ -1222,34 +1222,34 @@
 
 #910 
 
-import math 
-a = int(input("Son kiriting: "))
-item = 0
-Twos =  [0]
-while a > Twos[-1] :
-    Twos.append(math.pow(2, item))
-    item +=1
+# import math 
+# a = int(input("Son kiriting: "))
+# item = 0
+# Twos =  [0]
+# while a > Twos[-1] :
+#     Twos.append(math.pow(2, item))
+#     item +=1
 
-    def isTwo(num) :
-        items = 0
-        if num == 1 :                     
-            a = num - 1
-            items +=1
-        elif Twos[-1] < num :
-            a = num - Twos[-1]
-            items +=1
-        elif Twos[-1] > num :
-            a =  num - Twos[-2]
-            items +=1
+#     def isTwo(num) :
+#         items = 0
+#         if num == 1 :                     
+#             a = num - 1
+#             items +=1
+#         elif Twos[-1] < num :
+#             a = num - Twos[-1]
+#             items +=1
+#         elif Twos[-1] > num :
+#             a =  num - Twos[-2]
+#             items +=1
 
-        return a, items 
+#         return a, items 
 
-result = isTwo()
-while result > 0 :
-    isTwo(result)
+# result = isTwo()
+# while result > 0 :
+#     isTwo(result)
 
-resA = isTwo(a)
-print(resA)
+# resA = isTwo(a)
+# print(resA)
 
 
 
@@ -1274,3 +1274,76 @@ print(resA)
 #     print(resTot)
 #     return resTot
 # isTwo(n)
+
+
+
+# a = int(input())
+# if 1 <= a <= 20 :
+#   n = n/(2*n-1)
+#   print(int(n))
+
+
+# 0445 accepted
+# n = input()
+# sums= []
+# sumOfP = 0
+# sumOfMult = 0
+# for i in range(0,len(n)) :
+#     sums.append(n[int(i)])
+# for i in sums:
+#     sumOfMult *= int(i) 
+#     sumOfP += int(i)
+# if int(n) > sumOfMult or int(n) > sumOfP :
+#     print(n)
+# elif sumOfP > sumOfMult :
+#     print(sumOfP)
+# elif sumOfP < sumOfMult :
+#     print(sumOfMult)
+# 2 3 10 21 34 
+
+
+#0791
+
+# n = int(input())
+# n = 5
+# arr = []
+# for i in range(1,n+1) :
+#     arr.append(i)
+# start = 0
+# i=2
+# ler = start+i
+# while len(arr) != 2 :
+#     arr.pop(arr[i])
+#     start+=1
+#     i+=2
+#     if len(arr) != i :
+#         i+=2
+#     else :
+#         i=0
+    
+# print(arr)
+
+#0603
+
+import math
+def sums3(p,q,r) :
+    res = 0
+    i = 0
+    while i<=p :
+        cnt = 0
+        j = 0
+        while j <=q :
+            a = math.pow(r,i)
+            b = (a-1)/a
+            cnt+=math.pow(b,j)
+        cnt2 = math.factorial(p) /( math.factorial((p-i)) * math.factorial(i))
+        if i&1 :
+            res -= cnt*cnt2
+        else:
+            res+= cnt*cnt2
+    return res
+
+response = sums3(2,3,2) % (math.pow(10,9)+7)
+
+print(response)
+
