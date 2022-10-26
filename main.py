@@ -1365,34 +1365,270 @@
 
 
 #0257 
-n = input()
-freshZer = n.split('0')
-freshOne = n.split('1')
-print(freshZer,freshOne)
+# n = input()
+# freshZer = n.split('0')
+# freshOne = n.split('1')
+# print(freshZer,freshOne)
 
-if '0' in freshZer :
-    print("N0")
-else :
-    print("YES")
-
-
+# if '0' in freshZer :
+#     print("N0")
+# else :
+#     print("YES")
 
 
 
 
 
 
+# a = int(input())
+# if 1 <= a <= 20 :
+#   n = n/(2*n-1)
+#   print(int(n))
+
+
+# 0445 accepted
+# n = input()
+# sums= []
+# sumOfP = 0
+# sumOfMult = 0
+# for i in range(0,len(n)) :
+#     sums.append(n[int(i)])
+# for i in sums:
+#     sumOfMult *= int(i) 
+#     sumOfP += int(i)
+# if int(n) > sumOfMult or int(n) > sumOfP :
+#     print(n)
+# elif sumOfP > sumOfMult :
+#     print(sumOfP)
+# elif sumOfP < sumOfMult :
+#     print(sumOfMult)
+# 2 3 10 21 34 
+
+
+#0791
+
+# n = int(input())
+# n = 5
+# arr = []
+# for i in range(1,n+1) :
+#     arr.append(i)
+# start = 0
+# i=2
+# ler = start+i
+# while len(arr) != 2 :
+#     arr.pop(arr[i])
+#     start+=1
+#     i+=2
+#     if len(arr) != i :
+#         i+=2
+#     else :
+#         i=0
+    
+# print(arr)
+
+#0603
+
+# import math
+# def sums3(p,q,r) :
+#     res = 0
+#     i = 0
+#     while i<=p :
+#         cnt = 0
+#         j = 0
+#         while j <=q :
+#             a = math.pow(r,i)
+#             b = (a-1)/a
+#             cnt+=math.pow(b,j)
+#         cnt2 = math.factorial(p) /( math.factorial((p-i)) * math.factorial(i))
+#         if i&1 :
+#             res -= cnt*cnt2
+#         else:
+#             res+= cnt*cnt2
+#     return res
+
+# response = sums3(2,3,2) % (math.pow(10,9)+7)
+
+# print(response)
+
+
+# 0076
+# a = input().split()
+# b = int(input())
+# arr = [] 
+# for i in range(0,len(a)) :
+#     arr.append(int(a[i]))
+# if b > sum(arr[0::6]) :
+#     print(b-sum(arr))
+# else:
+#     print(0)
 
 
 
 
 
 
+# 0053
+
+# import math
+
+# def count_diags(n):
+#     if 1 <= n <= 10**9:
+#         return int(n * (n - 3) / 2)
+# n = int(input())
+# print(count_diags(n))
+
+# n = int(input())
+# if n > 0 :
+#   sumDig = int(n * ((n - 3) / 2))
+#   print(sumDig)
+
+# aa, bb = input().split()
+# [a, b, year ] = [int(aa), int(bb), 0]
+# if (a > b) and (1 < a < 100 and 1 < b < 100) :
+#     while a / b != 2 :
+#         a+=1
+#         b+=1
+#         year+=1
+#     print(year)
+# else: 
+#     print(-1)
+
+
+
+# def insertionSort(arr):
+#     # Traverse through 1 to len(arr)
+#     for i in range(1, len(arr)):
+#         key = arr[i]
+#         # Move elements of arr[0..i-1], that are #
+#         # greater than key, to one position ahead 
+#         # of their current position
+#         j = i-1
+#         while j >=0 and key < arr[j] :
+#                 arr[j+1] = arr[j]
+#                 j -= 1
+#         arr[j+1] = key
+ 
+# #sorting the array [12, 11, 13, 5, 6] using insertionSort
+# # arr = [12, 11, 13, 5, 6]
+# arr = list(map(int, input("Enter a multiple value: ").split()))
+# insertionSort(arr)
+# # lst = [] #empty list to store sorted elements
+# print("Sorted array is : ")
+# print(arr)
+
+# for i in range(len(arr)):
+#     lst.append(arr[i])     #appending the elements in sorted order
+# print(lst,arr)
+
+
+# def insertionSort(arr):
+#     for i in range(1, len(arr)):
+#         key = arr[i]
+#         j = i-1
+#         while j >=0 and key < arr[j] :
+#                 arr[j+1] = arr[j]
+#                 j -= 1
+#         arr[j+1] = key
+
+
+# t = int(input())
+# ts = 0
+# while t != ts :
+#     arr = list(map(int, input().split()))
+#     insertionSort(arr)
+#     print(arr)    
+#     ts+=1
 
 
 
 
 
+# Sorting algoritm
 
 
 
+# def sort(nums) :
+#     for i in range(len(nums)) :
+#         minpos = i
+#         for j in range(i,len(nums)+1):
+#             if nums[j] < nums[minpos] :
+#                 minpos = j
+#         temp = nums[i]
+#         nums[i] = nums[minpos]
+#         nums[minpos] = temp
+
+
+
+# # nums = list(map(int, input("Enter a multiple value: ").split()))
+# nums = [5,4,6,8,7,9]
+# sort(nums)
+# print(nums)
+
+
+
+
+#0092
+# t = int(input())
+# attemp = 0
+# if 1 <= t <= 1000 :
+#     while t > attemp :
+#         n = int(input())
+#         if 1 <= t <= 1000 :
+#             arr = list(map(int, input().split()))
+#             attemp+=1
+#             val = 0
+#             for i in arr :
+#                 if arr.count(i) > 1 :
+#                     val +=1
+#             print(val)
+
+
+
+# 12981 10309 12981 19639 10309 22624 22624 19639 2273
+
+
+
+
+#0099
+# import math
+# n = int(input())
+# fact = math.factorial(n)
+# m = n+1
+# sumAll = fact % m
+# print(sumAll)
+
+# from datetime import datetime
+# start_time = datetime.now()
+
+n = int(input())#
+# n = 6
+fact = 1
+for i in range (1,n+1):
+    fact = fact * i
+print(fact % (n+1) )
+
+
+# end_time = datetime.now()
+# print('Duration: {}'.format(end_time - start_time))
+
+
+# def oddprod(l,h) :
+#   p = 1
+#   ml = (l%2>0) ? l : (l+1)
+#   mh = (h%2>0) ? h : (h-1)
+#   while ml <= mh do
+#     p = p * ml
+#     ml = ml + 2
+#   end
+#   p
+# end
+
+# def fact(k)
+#   f = 1
+#   for i in 1..k-1
+#     f *= oddprod(3, 2 ** (i + 1) - 1)
+#   end
+#   2 ** (2 ** k - 1) * f
+# end
+
+# print fact(15)
