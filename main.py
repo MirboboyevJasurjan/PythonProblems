@@ -872,6 +872,28 @@
 # arr.pop()
 # print(arr[-1])
 
+
+# n = int(input())
+# # arr = input().split()
+# arr = list(map(int, input()))
+# print(map(int, input().split()))
+# maxNumb = 0
+# val = 0
+# while len(arr) > n :
+#     arr.pop()
+# for i in arr :
+#     if i > 100 :
+#         val -=1
+# if val >= 0 :
+#     for i in arr :
+#         if 100 >= int(i) >= 2 :
+#             arr.remove(max(arr))
+#             maxNumb = max(arr)
+#             break
+# print(int(maxNumb))
+# # 6
+# print(arr)
+# 3 5 5 2 2 3
 # 0462
 # k = int(input())
 # txt = input().split()
@@ -1220,36 +1242,36 @@
 
 
 
-#910 
+# #910 
 
-import math 
-a = int(input("Son kiriting: "))
-item = 0
-Twos =  [0]
-while a > Twos[-1] :
-    Twos.append(math.pow(2, item))
-    item +=1
+# import math 
+# a = int(input("Son kiriting: "))
+# item = 0
+# Twos =  [0]
+# while a > Twos[-1] :
+#     Twos.append(math.pow(2, item))
+#     item +=1
 
-    def isTwo(num) :
-        items = 0
-        if num == 1 :                     
-            a = num - 1
-            items +=1
-        elif Twos[-1] < num :
-            a = num - Twos[-1]
-            items +=1
-        elif Twos[-1] > num :
-            a =  num - Twos[-2]
-            items +=1
+#     def isTwo(num) :
+#         items = 0
+#         if num == 1 :                     
+#             a = num - 1
+#             items +=1
+#         elif Twos[-1] < num :
+#             a = num - Twos[-1]
+#             items +=1
+#         elif Twos[-1] > num :
+#             a =  num - Twos[-2]
+#             items +=1
 
-        return a, items 
+#         return a, items 
 
-result = isTwo()
-while result > 0 :
-    isTwo(result)
+# result = isTwo()
+# while result > 0 :
+#     isTwo(result)
 
-resA = isTwo(a)
-print(resA)
+# resA = isTwo(a)
+# print(resA)
 
 
 
@@ -1274,3 +1296,89 @@ print(resA)
 #     print(resTot)
 #     return resTot
 # isTwo(n)
+
+
+
+# 0602
+
+# a = input()
+# print(len(a))
+
+
+
+# a = input().split()
+# b = int(input())
+# c = 0
+# val = 0
+# for i in a :
+#     if int(i) < 0 :
+#         val-=1
+# if val :
+#     for i in range(1,len(a)+1) :
+#         c+=i
+#     print( b-c if b > c else 0 )
+
+
+# aa,bb = input().split()
+# [a,b] = [int(aa),int(bb)]
+# print(a*b)
+
+
+# a = input().split()
+# b = int(input())
+# arr = [] 
+# for i in range(0,len(a)) :
+#     arr.append(int(a[i]))
+# if b > sum(arr[0::6]) :
+#     print(b-sum(arr))
+# else :
+#   	print(0)
+
+# if b > c :
+#     print(b-c)
+# elif b < c :
+#     print(0)
+
+#print(c, '\n', arr)
+
+# for i in range(0,len(a)) :
+#     arr.append(int(a[i]))
+#     c+=i
+
+# #0371
+# arr = list(map(int, input().split()))
+# arr.sort()
+# print(arr[2]-arr[0])
+
+#0029
+# arr = list(map(int, input().split()))
+# if arr[0] == arr[1] :
+#     print('=')
+# else :
+#     print( ">" if arr[0] > arr[1] else "<" ).
+
+# arr = list(map(int, input().split()))
+# if arr[0] == arr[1] :
+#     print('=')
+# else :
+#     print( ">" if arr[0] > arr[1] else "<" )
+
+# import math
+# arr = list(map(int, input().split()))
+# geom = math.sqrt( arr[0] * arr[1]  )
+# arif = (arr[0] + arr[1]) / 2
+# if arr[0] >0 and arr[1] > 0 :
+#     if arif == geom :
+#         print('=')
+#     elif arif> geom :
+#         print(">")
+#     else :
+#         print("<")
+
+
+
+
+
+
+
+
