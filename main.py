@@ -1244,13 +1244,13 @@
 
 # #910 
 
-# import math 
-# a = int(input("Son kiriting: "))
-# item = 0
-# Twos =  [0]
-# while a > Twos[-1] :
-#     Twos.append(math.pow(2, item))
-#     item +=1
+import math 
+a = int(input("Son kiriting: "))
+item = 0
+Twos =  [0]
+while a > Twos[-1] :
+    Twos.append(math.pow(2, item))
+    item +=1
 
 #     def isTwo(num) :
 #         items = 0
