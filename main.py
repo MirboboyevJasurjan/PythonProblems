@@ -1600,12 +1600,12 @@
 # from datetime import datetime
 # start_time = datetime.now()
 
-n = int(input())#
-# n = 6
-fact = 1
-for i in range (1,n+1):
-    fact = fact * i
-print(fact % (n+1) )
+# n = int(input())#
+# # n = 6
+# fact = 1
+# for i in range (1,n+1):
+#     fact = fact * i
+# print(fact % (n+1) )
 
 
 # end_time = datetime.now()
@@ -1632,3 +1632,366 @@ print(fact % (n+1) )
 # end
 
 # print fact(15)
+
+
+# 0464
+# n = int(input())
+# item = 0
+# val = 0
+# def isEqual(l,r) :
+#     target = 0
+#     for i in range(0, len(l)) :
+#         if l[i] == r[i] :
+#             target+=1
+#     if target > 0 :
+#         print("YES")
+#     else :
+#         print("NO")
+    
+# if 1 <= n <= 10 :
+#     while item != n:
+#         s1 = input()
+#         s2 = input()
+#         arr1 = []
+#         arr2 = []
+#         if len(s1) > len(s2) :
+#             for i in range (0, len(s2)) :
+#                 arr1.append(s1[i])
+#                 arr2.append(s2[i])
+#         else :
+#             for i in range (0, len(s1)) :
+#                 arr1.append(s1[i])
+#                 arr2.append(s2[i])
+
+#         if len(arr1)>len(arr2) :
+#             isEqual(arr2,arr1)
+#         else:
+#             isEqual(arr1,arr2)
+#         item+=1
+        
+        
+        
+        # print("YES" if val >0 else "NO")    
+        # if (1 <= len(s1) <= 10**5 ) and (1 <= len(s2) <= 10**5 ) :
+        #     if len(s1) > len(s2) :
+        #         for i in range (0,len(s1)) :
+        #             arr1.append(s1[i])
+        #             arr2.append(s2[i])
+        #     else :
+        #         for i in range (0,len(s2)) :
+        #             arr1.append(s1[i])
+        #             arr2.append(s2[i])
+        #         if arr1[i] == arr2[i] :
+        #             val += 1
+        #         # else:
+        #         #     val = 0
+# 8 8 7 7
+# 8 9 6 7
+# 8
+# 7.5
+# 7.5 7.5 8.5 7.5
+#0818
+
+# writ = sum(map(float, input().split()))
+# speak = sum(map(float, input().split()))
+# listen = float(input())
+# read = float(input())
+# sumWrite = int(writ / 4)
+# sumSpeak = int(speak / 4)
+# overall = (sumWrite + sumSpeak + listen + read ) / 4
+# if float(overall) < float(format(overall, '.2f')) < int(overall)+0.5 :
+#     print(str(round(overall)+0.5))
+# elif float(format(overall, '.2f')) > int(overall)+0.5 :
+#     print(int(overall) + 1)
+
+# else :
+#     print(round(overall))
+
+
+
+# print(format(overall, '.2f') < str(round(overall)+0.5))
+# print(format(overall, '.2f'))
+# print(str(round(overall)+0.5))
+# f"{format(powB / a, '.2f')}%"
+
+
+# Oqimga qarshi tezlik
+# Matorli qayiq daryoda oqim bo'ylab t soat harakat qilib, 
+# s km yo'l bosdi. 
+# Agar daryo oqimining tezligi qayiqning turg'un suvdagi tezligidan v km/soat kam bo'lsa, 
+# qayiqning oqimga qarshi tezligini toping.
+
+
+# t soat 
+# all yo'l
+# qarshi v ?
+
+# 1.5 60 20
+# v = s/t 
+# 60/1.5
+
+
+
+
+
+
+# tt,ss,vv = input().split()
+# [t,s,v] = [float(tt),float(ss),float(vv)]
+# v1 = s/t
+# print(int(v1-v))
+
+# n = int(input())
+# item = 0
+# val = 0
+# def isEqual(l,r) :
+#     target = 0
+#     for i in range(0, len(l)) :
+#         if l[i] == r[i] :
+#             target+=1
+#     if target > 0 :
+#         print("YES")
+#     else :
+#         print("NO")
+    
+# if 1 <= n <= 10 :
+#     while item != n:
+#         s1 = input()
+#         s2 = input()
+#         arr1 = []
+#         arr2 = []
+#         if len(s1) > len(s2) :
+#             for i in range (0, len(s2)) :
+#                 arr1.append(s1[i])
+#                 arr2.append(s2[i])
+#         else :
+#             for i in range (0, len(s1)) :
+#                 arr1.append(s1[i])
+#                 arr2.append(s2[i])
+
+#         if len(arr1)>len(arr2) :
+#             isEqual(arr2,arr1)
+#         else:
+#             isEqual(arr1,arr2)
+#         item+=1
+
+# n = int(input())
+# item = 0
+# val = 0
+# def isEqual(l,r) :
+#     target = 0
+#     for i in range(0, len(l)) :
+#         if l[i] == r[i] :
+#             target+=1
+#     if target > 0 :
+#         print("YES")
+#     else :
+#         print("NO")
+    
+# if 1 <= n <= 10 :
+#     while item != n:
+#         s1 = input()
+#         s2 = input()
+#         arr1 = []
+#         arr2 = []
+#         if len(s1) >1 and len(s2) > 1 :
+#             if len(s1) > len(s2) :
+#                 for i in range (0, len(s2)) :
+#                     arr1.append(s1[i])
+#                     arr2.append(s2[i])
+#             else :
+#                 for i in range (0, len(s1)) :
+#                     arr1.append(s1[i])
+#                     arr2.append(s2[i])
+
+#             if len(arr1)>len(arr2) :
+#                 isEqual(arr2,arr1)
+#             else:
+#                 isEqual(arr1,arr2)
+#         item+=1
+
+#0341
+# n = int(input())
+# arr = list(map(int, input().split()))
+# val = 0
+# if 1<= n <= 500 :
+#     while len(arr) != n :
+#         arr.pop()
+#     for i in arr :
+#         if 1<= i <=100 :
+#             val-=1
+#     if val == 0 :
+#         res = [*set(arr)]
+#         sumall = len(arr)-len(res)
+#         if sumall == 0 :
+#             print(n)
+#         else:
+#             print(len(arr)-len(res))
+
+# n = int(input())
+# arr = list(map(int, input().split()))
+# if 1<= n <= 500 :
+#     while len(arr) != n :
+#         arr.pop()
+#     arr.sort()
+#     res = [*set(arr)]
+#         print(n)
+#     else :
+#         print(sumall)
+
+
+#     for i in arr :
+#         if 1 <= i <= 100 :
+#             if arr[i] not in arr1 :
+#                 arr1.append(arr[i])
+#             else:
+#                 val+=1
+# print(val)
+# print(arr, arr1)
+
+
+
+
+
+
+# for i in range(len(arr)) :
+#     if arr[i] == arr[i-1] :
+#         arr.remove(arr[i])
+#     else:
+# #         val+=1
+
+# test_list = [1, 5, 3, 6, 3, 5, 6, 1]
+# print("The original list is : " + str(test_list))
+ 
+# res = []
+# for i in test_list:
+#     if i in res:
+#         res.append(i)
+ 
+# Python 3 code to demonstrate
+# removing duplicated from list
+# using list comprehension and arr.index
+
+# # initializing list
+# arr = [1, 5, 3, 6, 3, 5, 6, 1]
+# print ('The original list is : '+ str(arr))
+
+# # using list comprehension + arr.index()
+# # to remove duplicated
+# # from list
+# res = [arr[i] for i in range(len(arr)) if i == arr.index(arr[i]) ]
+
+# # printing list after removal
+# # of duplicate
+# print('The list after removing duplicates :'
+# 		,res)
+
+
+# #0309
+# def binary_search(arr):
+#     low = 0
+#     high = len(arr) - 1
+#     mid = 0 
+#     while low <= high:
+#         mid = (high + low) // 2
+#         # If x is greater, ignore left half
+#         if arr[mid] < x:
+#             low = mid + 1
+#         # If x is smaller, ignore right half
+#         elif arr[mid] > x:
+#             high = mid - 1
+#         # means x is present at mid
+#         else:
+#             return mid
+#     # If we reach here, then the element was not present
+#     return -1
+ 
+# n = int(input())
+# arr = [ i for i in range(0,n+1) ]
+# print(arr)
+# x = 10
+# result = binary_search(arr, x)
+ 
+# if result != -1:
+#     print("Element is present at index", str(result))
+# else:
+#     print("Element is not present in array")
+
+
+# def binary(arr) :
+#     step = 0
+#     low = 0
+#     high = len(arr)
+#     mid = 0 
+#     while low <= high:
+#         mid = (high + low) // 2
+#         high = mid - 1
+#         step+=1
+#     return step
+
+# n = int(input())
+# arr = [ i for i in range(0,n+1) ]
+# resultt = binary(arr)
+# print(resultt)
+
+
+
+
+
+
+# Bo’linmas son
+# Sizga N va K sonlari beriladi. K ga bo’linmaydigan N-natural sonni chop eting!
+
+# Chiquvchi ma'lumotlar:
+# Chiqish faylida yagona son, KK ga bo’linmaydigan NN-sonni chop eting!
+
+
+
+
+# arr = list(map(int,input().split()))
+# [n,k] = [arr[0],arr[1]]
+# target = 0
+# step = 0
+# while n!=0 :
+#     for i in range(100):
+#         if i%k != 0 :
+#             target = i
+#         n-=1
+# print(target)
+arr = list(map(int, input().split()))
+[n,m] = [arr[0],arr[1]]
+matr = []
+
+for i in range(1,n+1) :
+    test = input().split()
+    matr.append(test)
+print(matr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
