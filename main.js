@@ -93,17 +93,20 @@
 
 
 // let ages = prompt()
-let a = ages.split(" ")[0];
-let b = ages.split(" ")[1];
+// let a = ages.split(" ")[0];
+// let b = ages.split(" ")[1];
 
-if(a > b && (1 < a < 100) && (1 < b < 100) ){
-    let year = 0
-    while (a / b != 2.0 ){
-        a+=1
-        b+=1
-        year+=1
-    console.log(year)
-    }
-}else{
-    console.log(-1)
-}
+// if(a > b && (1 < a < 100) && (1 < b < 100) ){
+//     let year = 0
+//     while (a / b != 2.0 ){
+//         a+=1
+//         b+=1
+//         year+=1
+//     console.log(year)
+//     }
+// }else{
+//     console.log(-1)
+// }
+
+let n = 5
+console.log( 0 <= n <= 10**9 ? n*(n+1) / 2 : 0 )

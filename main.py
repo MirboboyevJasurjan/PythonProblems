@@ -1957,30 +1957,129 @@
 #             target = i
 #         n-=1
 # print(target)
-arr = list(map(int, input().split()))
-[n,m] = [arr[0],arr[1]]
-matr = []
+# arr = list(map(int, input().split()))
+# [n,m] = [arr[0],arr[1]]
+# matr = []
 
-for i in range(1,n+1) :
-    test = input().split()
-    matr.append(test)
-print(matr)
-
-
+# for i in range(1,n+1) :
+#     test = input().split()
+#     matr.append(test)
+# print(matr)
 
 
+#0226
+
+# a = int(input())
+# gamers = []
+# winners = []
+# score = 0
+# while a!= 0:
+#     gamer = input().split()
+#     gamers.append(gamer)
+#     a-=1
+# b = int(input())
+# while b!= 0:
+#     gamScore= input()
+#     winners.append(gamScore)
+#     b-=1
+# for i in range(len(gamers)) :
+#     for j in range(len(winners)) :
+#         if gamers[i][1] == winners[j] :
+#             score += gamers[i][2]
+# print(score)
+# print(gamers)
+
+
+#0045
+# n = int(input())
+# # print(n+1)
+# print(int(n*(n+1)/2))
+
+# n = int(input())
+# if 0 <= n:
+#     print(int(n*(n+1)//2))
+
+# 0184
+
+# Kamida 6 ta belgidan iborat bo’lishi kerak;
+# Kamida bitta raqam qatnashishi kerak;
+# Kamida bitta Ingliz alifbosining kichik harfi qatnashishi kerak
+# Kamida bitta Ingliz alifbosining katta harfi qatnashishi kerak
+# Kamida bitta maxsus belgi qatnashishi kerak. Maxsus belgilar: !@#$%^&*()-+
+
+# n = int(input())
+# pin = input()
+# target = 5
+# symbols = ["!@#$%^&*()-+"]
+# if len(pin) == n :
+#     if len(pin) == 6 :
+#         target -=1
+#     for i in pin :
+#         if i in symbols :
+#             target -=1
+#             continue
+#         if i.isalpha() and i.isupper() :
+#             target -=1
+#             continue
+#         if i.isalpha() and i.islower() :
+#             target -=1
+#             continue
+#         if i.isdigit() :
+#             target -=1
+#             continue
+# print(target)
 
 
 
+#0185
+# n = int(input())
+# arr = list(map(int, input().split()))
+# if n < 200000 :
+#     if len(arr) == n :
+#         arr1 = sorted(arr)
+#         minSum = arr1[-1]
+#         for i in range(1, len(arr1)) :
+#             diff = arr1[i] - arr1[i-1]
+#             if diff < minSum :
+#                 minSum = diff
+#             else :
+#                 minSum = minSum
+# print(arr1, '\n', minSum)
+
+
+#0188
+# s = input()
+# arr = []
+# for i in range(len(s)) :
+#     arr.append(i)
 
 
 
+# a,b = map(int, input().split())
+# if 1 < a and 1 < b:
+#     if b-a == 2 :
+#         for i in range(2, int(b/2)+1):
+#             if (b % i) == 0:
+#                 print("No")
+#             else :
+#                 print("Yes")
+#     else:
+#         print("No")
 
 
+# def isPrime(n):
+#     for i in range(2, int(n**0.5)+1):
+#         if n % i == 0:
+#             return False
+
+#     return True
 
 
-
-
+from math import factorial
+n = int(input())
+def is_prime(x):
+    return factorial(x - 1)  % x == x - 1
+print(is_prime(n))
 
 
 
