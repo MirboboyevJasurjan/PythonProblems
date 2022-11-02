@@ -1244,13 +1244,13 @@
 
 # #910 
 
-import math 
-a = int(input("Son kiriting: "))
-item = 0
-Twos =  [0]
-while a > Twos[-1] :
-    Twos.append(math.pow(2, item))
-    item +=1
+# import math 
+# a = int(input("Son kiriting: "))
+# item = 0
+# Twos =  [0]
+# while a > Twos[-1] :
+#     Twos.append(math.pow(2, item))
+#     item +=1
 
 #     def isTwo(num) :
 #         items = 0
@@ -1376,9 +1376,96 @@ while a > Twos[-1] :
 #         print("<")
 
 
+#0564
+
+# Azimjon "Omad shou"ga chiqish uchun tinmasdan "Jesco" limonadlarini ichmoqda! 
+# Bugun u do'konga borib, nn shisha limonad sotib oldi. 
+# Har bir shishada tt litrdan limonat bor. 
+# U shishalarni bir qator qilib qo'ydi va quyidagilarni qila boshladi:
+# 1. U bitta shisha oladi, undan 1 litr ichadi.
+# 2. Ichgan shishasini qatorning oxiriga qo'yadi va keyingi shishaga o'tadi. Bu 2 ta harakat 1 ta qadam deb hisonlanadi.
+
+# k ta qadamdan song Azimjon kamida bitta shishani bo'shata oladimi?
+
+# arr = list(map(int, input().split()))
+# [n,t,k] = [arr[0],arr[1],arr[2]]
+# #  = 
+# print(n,t,k)
+
+# while k != 0:
+
+#     k-=1
 
 
 
 
 
 
+#0516 accepted
+# arr = list(map(int, input().split()))
+# [a,b,c] = [arr[0],arr[1],arr[2]]
+# if (1<= a <= 100) and (1<= b <= 100) and (1<= c <= 100) :
+#     sumAll = a+b
+#     if sumAll > c :
+#         print(sumAll-c)
+#     elif sumAll-c == 0 :
+#         print(0)
+#     else:
+#         print("Error")
+# else:
+#     print("Error")
+
+
+
+#
+# c = input ()
+# print (ord (input() ))
+
+
+
+# #0301
+
+# n = int(input())
+# arr = list(map(int, input().split()))
+# val = 0
+# while len(arr) > n :
+#     arr.pop()
+# arr1 = sorted(arr)
+# for i in range(0, len(arr1)):
+#     if arr1[i] != arr[i] :
+#         val-=1
+# if val == 0 :
+#     print("YES")
+# else:
+#     print("NO")
+
+
+# arr = list(map(float, input().split()))
+# [a,b,c] = [arr[0],arr[1],arr[2]]
+# if (1<= a <= 100) and (1<= b <= 100) and (1<= c <= 100) :
+#     isOne = c-a if c > a else a - c
+#     isTwo = c-b if c > b else b - c
+#     isM = isOne == 1 and isTwo == 1
+#     if isM :
+#         print("sichqon")
+#     elif isOne > isTwo :
+#         print("2-mushuk")
+#     elif isOne < isTwo:
+#         print("1-mushuk")
+
+#0373
+arr = input()
+arr1 = []
+arr2 = []
+# if len(arr) == 6 :
+#     for i in arr:
+#         if arr.index[i] < 3 :
+#             arr1.append(arr[i])
+#         else:
+#             arr2.append(arr[i])
+sum1 = sum(arr[0:2])
+sum2 = sum(arr[3:5])
+if sum1 == sum2 :
+    print("YES")
+else:
+    print("NO")
