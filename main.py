@@ -1454,18 +1454,495 @@
 #         print("1-mushuk")
 
 #0373
-arr = input()
-arr1 = []
-arr2 = []
+# arr = input()
+# arr1 = []
+# arr2 = []
 # if len(arr) == 6 :
 #     for i in arr:
 #         if arr.index[i] < 3 :
 #             arr1.append(arr[i])
 #         else:
 #             arr2.append(arr[i])
-sum1 = sum(arr[0:2])
-sum2 = sum(arr[3:5])
-if sum1 == sum2 :
-    print("YES")
-else:
-    print("NO")
+# sum1 = sum(arr[0:2])
+# sum2 = sum(arr[3:5])
+# if sum1 == sum2 :
+#     print("YES")
+# else:
+#     print("NO")
+
+
+
+# def insertionSort(arr):
+#     for i in range(1, len(arr)):
+#         key = arr[i]
+#         j = i-1
+#         while j >=0 and key < arr[j] :
+#                 arr[j+1] = arr[j]
+#                 j -= 1
+#         arr[j+1] = key
+  
+# arr = list(map(int, input().split()))
+# insertionSort(arr)
+# lst = [] 
+# for i in range(len(arr)):
+#     lst.append(arr[i])
+
+# print("Sorted array is : ", '\n', lst)
+
+# n = list(map(int,input().split('.')))
+# val = 0
+# if len(n) == 4 :
+#     for i in range(len(n)) :
+#         if 0 <= n[i] <= 255 :
+#             continue
+#         else :
+#             val -=1
+#     print("YES" if val == 0 else "NO")
+
+
+# a,h = map(int,input().split())
+# if (0 < a < 10**6+1) and (0 < h < 10**6+1) :
+# 	print( int((a*h)/2))
+# import math
+# n = int(input())
+# res = str(math.factorial(n))
+# last = res[-1]
+# if last == 0 :
+#     while last == 0 :
+#         last += 1
+# else :
+#     print(res[-1])
+
+
+# n = int(input())
+# # arr.sort()
+# while n != 0 :
+#     leng = int(input())
+#     arr = list(map(int, input().split()))
+#     if leng == len(arr) :
+#         def insertionSort(arr):
+#             step = 0
+#             for i in range(1, len(arr)):
+#                 key = arr[i]
+#                 j = i-1
+#                 while j >=0 and key < arr[j] :
+#                         arr[j+1] = arr[j]
+#                         j -= 1
+#                         step += 1
+#                 arr[j+1] = key
+#                 step +=1
+#                 return step
+#         print(insertionSort(arr))
+#         n-=1
+# arr = [12, 11, 13, 5, 6]
+# insertionSort(arr)
+# print(lst)
+
+# n = int(input())
+# arr = list(map(int, input().split()))
+# if 1<= n <=500 :
+#     if len(arr) == n :
+#         my_dict = {i:arr.count(i) for i in arr}
+#         target = 0
+#         my_list = list(my_dict.values())
+#         for i in my_list :
+#             if i % 2 !=0 :
+#                 target +=1
+        # print(target)
+        # print(my_list)
+        # print(my_dict)
+# target = 0
+# if len(arr) == n :
+#     for i in range(0, len(arr)):
+#         if  arr.count(arr[i]) == 1 :
+#             target+=1
+#         else :
+#             continue
+# print(target)
+
+
+
+# n = int(input())
+# arr = list(map(int, input().split()))
+# if n >= 1 :
+#     if n == len(arr) :
+#         setted = set(arr)
+#         if len(arr) == len(setted) :
+#             if all(i == arr[0] for i in arr) :
+#                 print(0)
+#             else:
+#                 print(len(setted))
+#         else :
+#             if len(arr) == 1 :
+#                 print(1)
+#             elif all(i == arr[0] for i in arr) :
+#                 print(0)
+#             else :     
+#                 val = (len(setted) - len(arr)) * -2
+#                 print(n - val)
+
+
+
+# a, exponent = map(int, input().split())
+# base = 2
+# result = 1
+# for i in range(a, 0, -1):
+#     result *= base
+# print(2 ** result % exponent)
+
+
+#0034
+# a,b = map(int, input().split())
+# print(pow(2,2**a,b))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#0343
+
+
+# n = int(input())
+# if 1<= n :
+#     a=[0,1]
+#     for ix in range(2,n+2):
+#         a.append( a[-1] + a[-2] )
+#     pr = []
+#     for i in range(1, len(a),2) :
+#         pr.append(a[i])
+#     numbs = 1_000_000_007
+#     theNum = sum(pr)
+#     over = numbs % sum(pr)
+#     print(over)
+
+# n = int(input())
+# fib=[0,1]
+# for ix in range(2,n+1):
+#     fib.append(fib[-1] + fib[-2])
+# #  Fibonacci tugadi
+# pr = []
+# for i in range(1, len(fib),2) :
+#     pr.append(fib[i])
+
+# # 10e9+7
+# numbs = 1e9+7
+
+# n = int(input())
+# if n != 0 :
+#     fib=[0,1]
+#     for ix in range(2,n+1):
+#         fib.append(fib[-1] + fib[-2])
+#     pr = 0
+#     for i in range(1, len(fib),2) :
+#         pr += fib[i]
+#     print(pow(pr,1,1000_007))
+# else :
+#     print(0)
+# 10e9+7
+# numbs = 1e9+7
+# n = int(input())
+# fib=[0,1]
+# for ix in range(2,n+1):
+#     fib.append(fib[-1] + fib[-2])
+# #  Fibonacci tugadi
+# pr = []
+# for i in range(1, len(fib),2) :
+#     pr.append(fib[i])
+
+# # 10e9+7
+# numbs = 1e9+7
+# over = numbs % sum(pr)
+# print(fib)
+
+# print(pr)
+
+# print([int(over)][-1])
+
+# fibonaccini listga yig'ish 
+# toq o'rindagilirini hisoblash 
+# j=10e9+7 ga javobini bo'lishim kere
+# n = int(input())
+# arr = list(map(int, input().split()))
+# minSum = 0
+# if n < 200000 :
+#     if len(arr) == n :
+#         arr1 = arr.sort(reverse=False)
+#         print(arr1[1] - arr1[0])
+
+
+
+
+
+#0026
+
+#Tn=n*** 2−(n−1)**2
+ 
+
+#S_{n} = T_{1}+T_{2}+T_{3}+ \dots + T_{n}S 
+#n=T1+T 2+T 3+⋯+T n
+ 
+# t = int(input())
+# while t != 0 :
+#     n = int(input())
+#     tn = pow(n,2)- pow((n-1),2)
+#     print(pow(tn,1,1000007))
+#     t-=1
+
+# n = int(input())
+# yuz = n % 100
+# yigirma = yuz % 20
+# on = yuz % 10 
+# besh = on % 5 or yigirma % 5
+# bir = besh % 1
+
+# n = int(input())
+# arr = list(map(int, input().split()))
+# minSum = 0
+# if len(arr) == n :
+#     for i in range(1, len(arr)) :
+#         if i >
+
+# if n < 200000 :
+#         arr1 = sorted(arr)
+#         print(arr1[1] - arr1[0])
+
+
+#0541
+# n = input()
+# if len(n) <= 50 :
+#     if n == n[::-1] :
+#         print(len(n)-1)
+#     else :
+#         print(len(n))
+
+# n = int(input())
+# k,f = 1,0
+# for i in range(n):
+# 	k,f = k+f,k
+# print(f*2)
+
+# n = input()
+# s = 0
+# for i in range(len(n)):
+# 	s += int(n[i])
+# print(s)
+
+
+
+
+
+# n = int(input())
+# k = int(input())
+
+# bString = "10101"
+# value = int(bString, 2)
+# print(value)
+
+# t = int(input())
+# n,k = map(int,input().split())
+# while t != 0 :
+#     arr = []
+#     for i in range(0,n) :
+#         arr.append(i)
+#     print(arr)
+#     arr.sort(reverse=True)
+    
+#     t-=1
+
+
+
+
+# 0029
+
+# t = int(input())
+# while t != 0 :
+#     n = int(input())
+#     mid = n // 2
+#     arr = []
+#     for i in range(0, mid) :
+#         if i % 2 == 0:
+#             arr.append(i)
+#     print(len(arr) if 0 < len(arr) else 0)
+#     t-=1
+
+# print(n[])
+
+# n = int(input())
+# a = 0
+# b = 1
+# while a != n:
+#     a = b + int(bin(b)[2:])
+#     b+=1
+#     if b == 10000:
+#         a = 0
+#     break
+# if a == 0: print(-1)
+# else: print(a)
+
+
+
+
+
+
+
+# olimp 10 c/
+n = int(input())
+# s = '1'
+# for i in range(0, n+1) :
+#     d = i * '0' 
+#     s+=d + '1'
+# print(s[n-1])
+# print(s)
+
+def recs(int: n) :
+    s = '1'
+    if n == 0:
+        print(1)
+    else:
+        d= recs(n-1) * '0'
+        s = d+'1'
+    return s
+
+print(recs(4))
+
+
+# class memry() :
+    # def mem() :
+
+
+# while True :
+#     m = 0
+#     n = input()
+#     if m == 0 or m % 2 == 0  and n == "?":
+#         print("Hasan")
+#         print(m)
+#         m = m+1
+#     elif  m % 2 != 0  and n == "?":
+#         print("Husan")
+#         print(m)
+#         m = m+1
+
+
+# Olimpiada A 
+# n = int(input())
+# k = int(input())
+# if n == k :
+#     print(1)
+# elif n%2==0:
+#     print(n//k)
+# else:
+#     print((n//k)+1)
+
+# n = list(map(int, input().split()))
+# if n[0] < 0 :
+#     print("Left")
+#     s=-1*n[0]
+# else:
+#     print("Right")
+#     s=n[0]
+# for i in range(n[1],n[2]+1 ):
+#     for j in range(n[3],n[4]+1 ):
+#         if i * j == s:
+#             print(i,j)
+#         else :
+#             print("Impossible")
+
+# n = 1
+# while True :
+#     k = input()
+#     if k == "?" and n % 2 != 0 :
+#         print("Hasan")
+#     else:7
+#         print("Husan")
+#     n+=1
+
+a = 168
+b = 64
+ 
+# while a != 0 and b != 0:
+#     if a > b:
+#         a = a % b
+#     else:
+#         b = b % a
+ 
+# print(a + b)
+
+
+# def sum(a,b) :
+#     if a==0 and b==0 :
+#         return
+#     else:
+#         if a>b:
+#             a = a % sum(a,b)
+#         else:
+#             b = b % sum(a,b)
+#         return(a+b)
+# print(sum(a,b))
+
+
+
+#0028
+# t = int(input())
+# while t != 0:
+#     x1,x2,y1,y2 = map(int, input().split())
+#     if x1 == 0 and x2 == 0:
+#         print(y1*2 , y2 *2)
+#     elif x1 == 0 and x2 > 0:
+#         print(y1*2 , y2 + (y2-x2))
+#     elif x2 == 0 and x1 > 0:
+#         print(y2*2 , y1 + (y1-x1))
+#     else:
+#         print(y1+(y1-x1), y2 + (y2-x2))
+#     t-=1
+
+
+# > sukut koʻp savollarga javob:
+# x=(x1+x2)//2
+# y=(y1+y2)//2
+
+# > sukut koʻp savollarga javob:
+# Shundan x1 bilan y1 ni topib olasiz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
