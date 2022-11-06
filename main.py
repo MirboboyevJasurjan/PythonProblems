@@ -1806,7 +1806,7 @@
 
 
 # olimp 10 c/
-n = int(input())
+# n = int(input())
 # s = '1'
 # for i in range(0, n+1) :
 #     d = i * '0' 
@@ -1814,16 +1814,16 @@ n = int(input())
 # print(s[n-1])
 # print(s)
 
-def recs(int: n) :
-    s = '1'
-    if n == 0:
-        print(1)
-    else:
-        d= recs(n-1) * '0'
-        s = d+'1'
-    return s
+# def recs(int: n) :
+#     s = '1'
+#     if n == 0:
+#         print(1)
+#     else:
+#         d= recs(n-1) * '0'
+#         s = d+'1'
+#     return s
 
-print(recs(4))
+# print(recs(4))
 
 
 # class memry() :
@@ -1876,8 +1876,8 @@ print(recs(4))
 #         print("Husan")
 #     n+=1
 
-a = 168
-b = 64
+# a = 168
+# b = 64
  
 # while a != 0 and b != 0:
 #     if a > b:
@@ -1925,6 +1925,122 @@ b = 64
 
 
 
+''' ``` A~Start ``` '''
+# A
+# Jamshid 3×3 sehrli matritsalarni yaxshi ko'radi. 
+# Uning o'ylashicha matritsaning istalgan satrining, 
+# ustunning va ikki diogonalning elementlarning yig'indisi 
+# bir biriga teng bo'lsa ushbu matritsa sehirli matritsa hisoblanadi.
+
+# Jamshid sehrli matritsani hosil qilishda asosiy diogonallaridagi elementlarni yozishda xatolikka yo'l qo'ydi.
+#  Sizning vazifangiz ushbu matritsani faqatgina asosiy dioganalini o'zgartirgan holda sehrli matritsaga keltirishdan iborat.
+
+# def matrix(arr1,arr2,arr3):
+    
+#     while True :
+#         arr = [arr1,arr2,arr3]
+
+# arr1 = input()
+# arr2 = input()
+# arr3 = input()
+
+# print(matrix(arr1,arr2,arr3))
+
+
+# arr 1 1 1
+# arr 1 1 1
+# arr 1 1 1 
+
+
+''' ``` #~Finish ``` '''
+# B
+# 6 ta son qabul qilib olaman, shu listni shundey 2ga bo'lishim kerakki, 2 ala listning yig'indisi teng bo'lsin, aks holda -1
+# n = list(map(int,input().split()))
+# arr1 = []
+# arr2 = []
+# def splitTo(arr) :
+#     arr1 = []
+#     arr2 = []
+#     i = 0
+#     while sum(arr1) != sum(arr) // 2 :
+#         if len(arr1) != 3 :
+#             arr1.append(arr[i])
+
+#         if i != 6 :   
+#             i +=1
+#         else :
+#             i = 0
+        
+# print(sum(n))
+
+# C
+
+
+# Formula = x**2 + f(x) * x = n 
+# def rec(m) : 
+#     if m == 1:
+#         return 1
+#     m = m+rec(m-1)
+#     return m
+
+# def binary_search(n):
+#     low = 0
+#     high = n
+#     mid = 0
+#     while low <= high:
+#         mid = (high + low) // 2
+#         if mid**2 + rec(mid) * mid < n:
+#             low = mid + 1
+#             # print(mid,low ,"Low")
+#         elif mid**2 + rec(mid) *mid > n:
+#             high = mid - 1
+#             # print(mid,high,"high")
+#         else:
+#             return mid
+#             # print(mid)
+
+#     return high
+
+# n = int(input())
+# res = binary_search(n)
+# if res == 1 :
+#     print(1)
+# else:
+#     print(int(res)*2)
+
+
+
+# n = int(input())
+# d = (-1+(1+((-1*n)*-4)) **0.5) // 2
+# print(int(d))
+
+
+
+# D
+
+# E
+# a = input()
+# b = input()
+# s = ""
+# lenn = len(a)
+# item = 0
+
+# while lenn != 0 :
+#     if  item == 0 and item % 2 == 0:
+#         s= s + b[item]
+#     else:
+#         s= s + a[item]
+#     item+=1
+#     lenn -=1
+# print(s)
+# olex
+# iows
+# iolo ewxs
+
+
+# F
+
+# G
 
 
 
@@ -1940,9 +2056,194 @@ b = 64
 
 
 
+# alp='abcdefghijklmnopqrstuvwxyz'
+# a=input()
+# b=input()
+# a1=[]
+# b1=[]
+# for i in a:
+#     a1.append(alp.index(i))
+# for k in b:
+#     b1.append(alp.index(k))
+# j=0
+# j1=''
+# for o in a:
+#     j+=1
+#     if j%2!=0:
+#         j1+=alp[min(a1)]
+#         a1.remove(min(a1))
+#     else:
+#         j1+=alp[max(b1)]
+#         b1.remove(max(b1))
+# print(j1)
+
+
+# a = list(map(int, input().split()))[:6]
+# print(a)
+# if sum(a) % 2 == 0:
+#     print("yes")
+# else :
+#     print("no")
+
+
+
+# from math import sqrt
+# def f(x):
+#     d = [int(i) for i in str(x)]
+#     return sum(d)
+
+# def check(n):
+#     i = int(sqrt(n))
+#     l = i-200 if i > 200 else 1
+#     r = i+200
+#     for i in range(l, r):
+#         if i*i+i*f(i)==n:
+#             return i
+#     return -1
+
+# n = int(input())
+# print(check(n))
+
+# def summ(n: list) -> bool:
+#     # print(n[0])
+#     if sum(n[0])==sum(n[1])==sum(n[2]):
+#         d1 = (n[0][0]+n[1][1]+n[2][2])
+#         d2 = (n[0][2]+n[1][1]+n[2][0])
+#         if d1==d2==sum(n[0]):
+#             return True
+#     return False
+
+# def check(d):
+#     for i in range(10):
+#         d[0][0] = i
+#         for j in range(10):
+#             d[1][1] = j
+#             for k in range(10):
+#                 d[2][2] = k
+#                 if summ(d):
+#                     return d
+#     return d
+
+# d = []
+# for i in range(3):
+#     f = list(map(int, input().split()))
+#     d.append(f)
+# if check(d):
+#     d = check(d)
+#     for i in range(3):
+#         for j in range(3):
+#             print(d[i][j], end=" ")
+#         print()
+# else:
+#     print(-1)  
+# # a masala
+
+# a, b,c,d,f,g = map(int,input().split())
+# h = max(a,b,c,d,f,g)
+# g = g+a+b+c+d+f
+# if(h == 0):
+#   print("yes")
+# elif g % h != 0:
+#    print("yes")
+# else:
+#     print("no")
+
+
+
+#     od = list(map(int, input().split()))
+# k1 = []
+# k2 = []
+# k1.append(max(od))
+# od.remove(max(od))
+# k2.append(max(od))
+# od.remove(max(od))
+# k2.append(max(od))
+# od.remove(max(od))
+# k1.append(max(od))
+# od.remove(max(od))
+# k2.append(max(od))
+# od.remove(max(od))
+# k1.append(max(od))
+# od.remove(max(od))
+# if sum(k1) == sum(k2):
+#     print("Yes")
+# else:
+#     print("No")
+
+
+
+
+# def summ(n: list) -> bool:
+#     # print(n[0])
+#     if sum(n[0])==sum(n[1])==sum(n[2]):
+#         d1 = (n[0][0]+n[1][1]+n[2][2])
+#         d2 = (n[0][2]+n[1][1]+n[2][0])
+#         if d1==d2==sum(n[0]):
+#             return True
+#     return False
+
+# def check(d):
+#     for i in range(10):
+#         d[0][0] = i
+#         for j in range(10):
+#             d[1][1] = j
+#             for k in range(10):
+#                 d[2][2] = k
+#                 if summ(d):
+#                     return d
+#     return d
+
+# d = []
+# for i in range(3):
+#     f = list(map(int, input().split()))
+#     d.append(f)
+# if check(d):
+#     d = check(d)
+#     for i in range(3):
+#         for j in range(3):
+#             print(d[i][j], end=" ")
+#         print()
+# else:
+#     print(-1)  
+
+
+# ind = [[0, 1, 2], [0, 1, 3], [0, 1, 4], [0, 1, 5], [0, 2, 3], [0, 2, 4], [0, 2, 5], [0, 3, 4], [0, 3, 5], [0, 4, 5], [1, 2, 3], [1, 2, 4], [1, 2, 5], [1, 3, 4], [1, 3, 5], [1, 4, 5], [2, 3, 4], [2, 3, 5], [2, 4, 5], [3, 4, 5]]
+# arr = list(map(int, input().split()))
+# res = 0
+# sm = sum(arr)
+# for  i in ind:
+#     h = 0
+#     for index in i:
+#         h += arr[index]
+#     if sm == 2*h:
+#         res = 1
+# if res:
+#     print("Yes")
+# else:
+#     print("No")
 
 
 
 
 
 
+
+
+
+
+
+# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+# a1, a2, a3 = map(int, input().split())
+# b1, b2, b3 = map(int, input().split())
+# c1, c2, c3 = map(int, input().split())
+# if a2+a3 == b1+b3 == c1+c2 == b1+c1 == a2+c2 == a3+b3:
+#     if (c1+b1)%2==0:
+#         x=((c1+b1)//2)  
+#     else: 
+#         x=0
+#     print(x, a2, a3)
+#     print(b1, x, b3)
+#     print(c1, c2, x)
+# else:
+#     print(-1)
